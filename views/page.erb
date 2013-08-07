@@ -1,0 +1,10 @@
+<div>
+	<p><%= @page %><p>
+	<% counter = 0 %>
+	<% @actions.each do |a| %>
+		<a href='<%= a.goto %>'><%= counter += 1 %></a> ) <%= a.text %><br />
+	<% end %>
+	<br />
+	<br />	
+	<a href="<%= url "/book/#{params[:book_title]}/page/0" %>">r</a>) Restart chapter
+<div>

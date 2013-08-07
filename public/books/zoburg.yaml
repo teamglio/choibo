@@ -1,0 +1,102 @@
+---
+title: Zoburg
+pages:
+#0
+- "It was a typical day in Joburg city: pleasant weather with a few rain clouds scattered overhead, the buzz of a hundred cars and trucks filling your ears, people everywhere. Thabo felt happy and whistled a tune while he walked down West street on his way to work."
+#1
+- "When Thabo first saw the creature it was easy to mistake its figure for that of an old begger's. Its movements were odd however: it had an uneven gait, its one foot dragging along on the tarred road."
+#2
+- "The creature was limping towards a group of women waiting to cross the street.Their backs were turned, so when the creature took a large bite from the closest woman's shoulder she looked surprised. Blood spattered all over the other women as their friend screamed in agony. They fell over each other in an attempt to get away. I could see a chunk of the lady's shoulder in its mouth, her scream still ringing in my ears."
+#3
+- "Suddenly the creature turned its head towards Thabo. The skin on its face looked saggy, and its jaw was covered with blood, dripping down the front of its alrealyd blood-stained shirt. The worst was its eyes. They were the eyes of a dead man. That's when it hit Thabo. Suddenly he realised what was happening. They made movies and wrote books about this day: this was the beginning of the zombie apocolypse, right here in the heart of Johannesburg. And this zombie was looking right at Thabo. He had to move fast."
+#4
+- "Thabo turned around and ran as fast as his legs could carry him. He could not get the woman's horrified face out his mind, and her scream still ringed in his ears. Somewhere nearby an alarm was sounding and cars were starting to clutter the streets, honking in disaccord. He had to get to Ntombi. She was alone at the flat in Hillbrow."
+#5
+- "Thabo dashed toward the lady and the creature. He knew that if he wanted to save the lady, he had to act quickly."
+#6
+- "Thabo balled his fist and swung at the zombie as hard as he could. His fist made a dull thump as it hit the creature's head, blood spattering the pavement. That hit would've put a normal person flat on the ground, but this wasn't a normal person. Before Thabo could do anything else the zombie was upon him, biting deep into his neck. At first there was incredible pain. Then there was only darkness. <strong>THE END</strong>"
+#7
+- "Thabo kicked as hard as he could. The zombie fell backwards, sprawling into the street. It's skull cracked loudly as a Putco bus drove over it. Thabo watched the headless body jerk a few times before it was still. Other cars swerved out of the way. The traffic was starting to get really bad, cars honking and squeezing past each other. Thabo knelt down at the woman that was bitten. She was unconscious, bleeding profusely from her neck. The contents of her handbag was strewn around her: lipstick, a few scraps of paper, mints, a wallet and something black - a small handgun. The woman probably carried it for protection - the crime made Joburg a dangerous place. Thabo picked up the handgun, feeling its weight in his hand. He checked: it was loaded, and the safety was on. Suddenly the woman grabbed his arm. Her grip was like ice, and her eyes were dead. She lunged for Thabo."
+#8
+- "Thabo aimed and pulled the trigger. Pieces of brain and skull splattered imto his face and the pavement. The shot rang in his ear. It felt like a long time before Thabo noticed the other shapes coming around the corner: it was a whole pack of zombies, six or maybe seven of them. They must've heard the gunshot and is heading straight for him. Idiot, he thought!"
+#9
+- "Thabo opened fire. He missed two times, and shot down three before the gun clicked. The gun was out of ammo, and the zombies were upon him, tearing his limbs from his body. <strong>THE END</strong>"
+#10
+- "Thabo pulled away, stuck the gun in his belt and bolted. He had to get to Hillbrow, he had to get to Ntombi before it was too late. Hopefully he could still save her and the baby."
+#11
+- "<p><strong>To be continued...</strong></p><p>We hope you enjoyed the first chapter of <strong>Zoburg - A Zombie Story in Joburg</strong>. Would you be interested in reading Chapter 2? <br/> <a href='/interested'>1</a>) Yes please!<br /><a href='/disinterested'>2</a>) No, too boring<br />" 
+#12
+- "Thabo was dashing through groups of people. Everywhere people were talking on their cellphones, gesiculating wildly. Thabo looked at a young woman who were crying uncontrollably. Across the street people were throwing bricks into a shop selling electronics. The city was in chaos. He could hear sirens somewhere in the distance - he didn't know whether it was police or ambulance sirens. He had no time. He had to get to Hilbrow. Before he could make another move, a taxi drove straight across the curbstone and into the wall of a big bank building. The taxi was on fire. Thabo noticed a fire extinguisher just inside the door of the bank building."
+#13
+- "Thabo darted into the bank building, hooked the fire extinguisher from where it was hanging ran back to the taxi. People were trying to get out of the windows. Some of them were burnt badly. Thabo opened the fire extinguisher and started spraying white foam onto the vehicle. One of the survivors fell out of the side window of the taxi and started crawling towards Thabo, making strange moaning noises."
+#14
+- "Thabo had to get to Hillbrow, he had to get to Ntombi before it was too late. Hopefully he could still save her and the baby."
+#15
+- "Thabo made ready to bash the crawling survivor's head in with the fire extinguisher. Then he hesitated. What if the person was still alive? Then he would be murdering an innocent person...as Thabo was having these thoughts, one of the other survivors who he hadn't noticed bit a large chunk out of his arm. Thabo heard his own scream echo in his ears. <strong>THE END</strong>"  
+actions:
+#0
+- page: 0
+  goto: 1
+  text: Walk down West street
+#1
+- page: 1
+  goto: 2
+  text: Watch what the creature does
+#2
+- page: 2
+  goto: 3
+  text: Watch on in horror
+#3
+- page: 3
+  goto: 12 #<- 
+  text: Run away
+- page: 3
+  goto: 5
+  text: Try to attack the zombie and help the lady
+#4
+- page: 4
+  goto: 8
+  text: Make your way to the flat in Hillbrow where Ntombi is
+#5
+- page: 5
+  goto: 6
+  text: Hit the creature with your fist
+- page: 5
+  goto: 7
+  text: Kick the creature
+#7
+- page: 7
+  goto: 8
+  text: Shoot the zombie in the head
+- page: 7
+  goto: 10
+  text: Try to pull away
+#8
+- page: 8
+  goto: 9
+  text: Shoot at the zombies
+- page: 8
+  goto: 10
+  text: Run away
+#10
+- page: 10
+  goto: 11
+  text: Onwards to Hillbrow
+#12
+- page: 12
+  goto: 13
+  text: Try to put the fire out with the fire extinguisher
+- page: 12
+  goto: 14
+  text: Leave the taxi and continue to Hillbrow 
+#13
+- page: 13
+  goto: 15
+  text: Bash the survivor's head in with the fire extinguisher
+- page: 13
+  goto: 14
+  text: Drop the fire extinguisher and continue to Hillbrow   
+#14
+- page: 14
+  goto: 11
+  text: Onwards to Hillbrow 
