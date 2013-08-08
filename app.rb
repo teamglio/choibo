@@ -39,6 +39,10 @@ get '/disinterested' do
 	erb :home
 end
 
+get '/stats' do
+	erb "Users: #{Firebase.get('').body.count} <br /> Interested: #{Firebase.get('').body.values.select {|v| v['interested'] == true}.count} <br /> Disinterested: #{Firebase.get('').body.values.select {|v| v['interested'] == false}.count} <br />Conversion: #{Firebase.get('').body.values.select {|v| v['interested'] == true}.count / Firebase.get('').body.count.to_f}"
+end
+
 helpers do
 	def get_user
 		mxit_user = MxitUser.new(request.env)
