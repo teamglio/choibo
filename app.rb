@@ -1,13 +1,15 @@
-require 'sinatra'
-require 'dotenv'
-require 'firebase'
-require 'nestful'
-require 'kolb'
+require 'rubygems'
+require 'bundler'
+Bundler.require(:default) 
 require_relative 'lib/choibo.rb'
 
 configure do
 	Dotenv.load if settings.development?
 	Firebase.base_uri = "https://glio-mxit-users.firebaseio.com/#{ENV['MXIT_APP_NAME']}/"
+	AWS.config(
+	  :access_key_id => ENV['AWS_KEY'],
+	  :secret_access_key => ENV['AWS_SECRET']
+	)	
 end
 
 before do
@@ -37,6 +39,21 @@ get '/disinterested' do
 	mxit_user = MxitUser.new(request.env)
 	Firebase.update(mxit_user.user_id, {:interested => false})
 	erb :home
+end
+
+get '/feedback' do
+	erb :feedback
+end
+
+post '/feedback' do
+	ses = AWS::SimpleEmailService.new
+	ses.send_email(
+	  :subject => 'Choibo feedback',
+	  :from => 'mxitappfeedback@glio.co.za',
+	  :to => 'mxitappfeedback@glio.co.za',
+	  :body_text => params['feedback'] + ' - ' + MxitUser.new(request.env).user_id
+	  )
+	erb "Thanks! <a href='/'>Back</a>" 
 end
 
 get '/stats' do
